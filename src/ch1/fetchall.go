@@ -32,7 +32,7 @@ func fetch(url string, ch chan string) {
 		return
 	}
 
-	n, err:= io.Copy(ioutil.Discard, resp.Body)
+	n, err := io.Copy(ioutil.Discard, resp.Body)
 	_ = resp.Body.Close()
 
 	if err != nil {

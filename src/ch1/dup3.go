@@ -18,7 +18,7 @@ func main() {
 			continue
 		}
 
-		for _ ,v := range strings.Split(string(data), "\n") {
+		for _, v := range strings.Split(string(data), "\n") {
 			counts[v]++
 		}
 	}

@@ -25,7 +25,7 @@ func main() {
 		n, err := io.Copy(os.Stdout, resp.Body)
 		_ = resp.Body.Close()
 
-		if err != nil || n == 0{
+		if err != nil || n == 0 {
 			_, _ = fmt.Fprintf(os.Stderr, "fetch reading %s: %v", url, err)
 			os.Exit(1)
 		}

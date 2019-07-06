@@ -42,7 +42,7 @@ func fetch2File(url string, ch chan string, w io.Writer) {
 		return
 	}
 
-	n, err:= io.Copy(w, resp.Body)
+	n, err := io.Copy(w, resp.Body)
 	_ = resp.Body.Close()
 
 	if err != nil {

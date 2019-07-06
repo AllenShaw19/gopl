@@ -19,7 +19,7 @@ var palette__ = []color.Color{color.RGBA{R: 0x00, G: 0x64, B: 0x00, A: 0xff}, co
 
 const (
 	GreenIndex__ = 0
-	RedIndex__ = 1
+	RedIndex__   = 1
 )
 
 func main() {
