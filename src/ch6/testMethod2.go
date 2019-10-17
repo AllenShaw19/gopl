@@ -1,8 +1,10 @@
 package main
 
-import "math"
-import "time"
-import "fmt"
+import (
+	"fmt"
+	"math"
+	"time"
+)
 
 type Point struct {
 	X float64
@@ -19,6 +21,7 @@ func PrintPoint(f func(*Point) float64, a *Point) float64 {
 }
 
 func main() {
+
 	p := &Point{
 		1, 2,
 	}
